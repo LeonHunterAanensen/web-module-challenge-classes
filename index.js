@@ -50,11 +50,13 @@ class Person {
     this.stomach = [];
   }
   eat(edible){
-    if(this.stomach.length > 10){
+    if(this.stomach.length < 10){
       this.stomach.push(edible)
       console.log(this.stomach.length)
+    } else if(this.stomach.length === 10) {
+      console.log(this.stomach, 'person full')  
     } else {
-    console.log(this.stomach, 'person full')    
+    console.log(this.stomach, 'Bug')    
     }
   }
   poop(){
