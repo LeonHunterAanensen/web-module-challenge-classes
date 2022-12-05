@@ -130,8 +130,7 @@ class Lambdasian {
   speak(){
     return `Hello my name is ${this.name}, I am from ${this.location}`
   }
-  
-}
+} //complete
 
 /*
   TASK 4
@@ -148,7 +147,16 @@ class Lambdasian {
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
 
-class Instructor {
+class Instructor extends Lambdasian {
+  constructor(object,specialty,favLanguage,catchPhrase){
+    super();
+    this.name = object.name
+    this.age = object.age
+    this.location = object.location
+    this.specialty = specialty
+    this.favLanguage = favLanguage
+    this.catchPhrase = catchPhrase
+  }
 
 }
 
