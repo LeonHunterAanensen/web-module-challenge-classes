@@ -106,7 +106,7 @@ class Car {
     
     }
   }
-}
+} //complete
 
 /*
   TASK 3
@@ -122,7 +122,11 @@ class Car {
 */
 
 class Lambdasian {
-  
+  constructor(name, age, location){
+    this.name = name
+    this.age = age 
+    this.location = location
+  }
 }
 
 /*
