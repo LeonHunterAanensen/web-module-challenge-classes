@@ -65,7 +65,7 @@ class Person {
   toString(){
     return `${this.name},${this.age}`
   }
-}
+} //complete
 
 /*
   TASK 2
@@ -82,7 +82,29 @@ class Person {
 */
 
 class Car {
-  
+  constructor(M,MPG){
+    this.model = M
+    this.mpg = MPG
+    this.T = 0
+    this.O = 0
+  }
+  fill(gallons){
+    this.T = this.T + gallons
+  }
+  drive(distance){
+    let x = distance/this.mpg
+    if(this.T>x || this.T == x){
+      this.T = this.T - x
+      this.O = this.O +distance
+    } else if(this.T<x) {
+    let y = this.T * this.mpg
+    this.O = this.O + y 
+    this.T = 0 
+    return `I ran out of fuel at ${this.O} miles!`
+    } else {
+    console.log('bug')
+    }
+  }
 }
 
 /*
