@@ -84,25 +84,26 @@ class Person {
 class Car {
   constructor(M,MPG){
     this.model = M
-    this.mpg = MPG
-    this.T = 0
-    this.O = 0
+    this.milesPerGallon = MPG
+    this.tank = 0
+    this.odometer = 0
   }
   fill(gallons){
-    this.T = this.T + gallons
+    this.tank = this.tank + gallons
   }
   drive(distance){
-    let x = distance/this.mpg
-    if(this.T>x || this.T == x){
-      this.T = this.T - x
-      this.O = this.O +distance
-    } else if(this.T<x) {
-    let y = this.T * this.mpg
-    this.O = this.O + y 
-    this.T = 0 
-    return `I ran out of fuel at ${this.O} miles!`
+    let x = distance/this.milesPerGallon
+    if(this.tank>x || this.tank == x){
+      this.tank = this.tank - x
+      this.odometer = this.odometer +distance
+    } else if(this.tank<x) {
+    let y = this.tank * this.milesPerGallon
+    this.odometer = this.odometer + y 
+    this.tank = 0 
+    return `I ran out of fuel at ${this.odometer} miles!`
     } else {
     console.log('bug')
+    
     }
   }
 }
