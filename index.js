@@ -215,9 +215,6 @@ class ProjectManager extends Instructor {
   super({name,age,location,previousBackground,className,favSubjects,gradClassName,favInstructor})
   this.gradClassName = gradClassName
   this.favInstructor = favInstructor
-  this.specialty = specialty
-  this.favLanguage = favLanguage
-  this.catchPhrase = catchPhrase
 }
 standUp(channel){
 return `${this.name} announces to ${channel}, @channel standy times!`
