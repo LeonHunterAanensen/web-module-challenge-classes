@@ -181,9 +181,9 @@ class Instructor extends Lambdasian {
 class Student extends Lambdasian{
   constructor({name,age,location,previousBackground,className,favSubjects}){
     super({name,age,location,previousBackground,className,favSubjects})
-    this.previousBackground = object.previousBackground
-    this.className = object.className
-    this.favSubjects = object.favSubjects
+    this.previousBackground = previousBackground
+    this.className = className
+    this.favSubjects = favSubjects
   }
 }
 
