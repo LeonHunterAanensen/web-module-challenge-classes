@@ -178,8 +178,15 @@ class Instructor extends Lambdasian {
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
 
-class Student {
-   
+class Student extends Lambdasian{
+  constructor(object){
+    this.name = object.name
+    this.age = object.age 
+    this.location = object.location
+    this.previousBackground = object.previousBackground
+    this.className = object.className
+    this.favSubjects = object.favSubjects
+  }
 }
 
 /*
